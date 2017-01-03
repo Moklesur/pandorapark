@@ -229,33 +229,13 @@ function themetim_active_plugins() {
 			'required'  => false,
 		),
 		array(
-			'name'      => 'WooCommerce',
-			'slug'      => 'woocommerce',
-			'required'  => false,
-		),
-		array(
 			'name'      => 'Page Builder by SiteOrigin',
 			'slug'      => 'siteorigin-panels',
 			'required'  => false,
 		),
 		array(
-			'name'      => 'YITH WooCommerce Compare',
-			'slug'      => 'yith-woocommerce-compare',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'YITH WooCommerce Quick View',
-			'slug'      => 'yith-woocommerce-quick-view',
-			'required'  => false,
-		),
-		array(
 			'name'      => 'Yoast SEO',
 			'slug'      => 'wordpress-seo',
-			'required'  => false,
-		),
-		array(
-			'name'      => 'WP Construction Mode',
-			'slug'      => 'wp-construction-mode',
 			'required'  => false,
 		),
 	);

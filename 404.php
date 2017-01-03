@@ -8,13 +8,13 @@
  */
 
 get_header(); ?>
-	<main id="main" class="site-main" role="main">
+	<main id="main" class="site-main padding-gap-1" role="main">
 		<section class="error-404 not-found padding-gap-1 padding-gap-2">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<header>
-							<h1 class="page-header margin-null"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'themetim' ); ?></h1>
+							<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'themetim' ); ?></h1>
 						</header><!-- .page-header -->
 
 						<div class="page-content padding-gap-3">
