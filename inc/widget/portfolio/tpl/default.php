@@ -6,7 +6,7 @@
 <?php endif; ?>
 
 <?php foreach( $instance['menus'] as $i => $menu ) : ?>
-	<div class="themetim-portfolio-list overflow portfolio-list col-md-<?php echo esc_attr( $instance['per_row'] ); ?> col-sm-<?php echo esc_attr( $instance['per_row'] ); ?> col-xs-12 padding-null">
+	<div class="themetim-portfolio-list overflow portfolio-list col-md-<?php echo esc_attr( $instance['per_row'] ); ?> col-sm-12 col-xs-12 padding-null">
 		<div class="position-relative">
 			<div class="portfolio-image">
 				<?php

@@ -13,26 +13,63 @@
         ## Min Width 992px And Max Width 1199px
 ********************************************************/
 @media (min-width: 992px) and (max-width: 1199px) {
-    .woocommerce a.add_to_cart_button{
-        padding: .618em 6px;
+    .portfolio-details {
+        top: 20%;
+        padding: 15px;
     }
-    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-        width: 22.566666%;
+    .portfolio-details h1 {
+        font-size: 24px;
     }
-    .woocommerce.archive ul.products li.last{
-        margin-right: 0;
+    .contact-details-fix {
+        padding: 30px;
     }
 }
 /********************************************************
-        ## Min Width 992px And Max Width 1199px
+        ## Min Width 768px And Max Width 991px
 ********************************************************/
 @media (min-width: 768px) and (max-width: 991px){
-
+    .padding-fix {
+        padding: 0 30px;
+    }
+    .navbar-collapse{
+        padding: 0;
+    }
+    .primary-menu ul li a,.sticky .primary-menu ul li a {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+    .request-account .request-button:focus, .request-account .request-button {
+        padding: 20px 5px;
+    }
+    .type-inner {
+        max-width: 630px;
+    }
+    .type-inner h1 {
+        font-size: 40px;
+    }
+    .typed-cursor {
+        font-size: 62px;
+    }
+    .request-a-quote .modal-dialog {
+        width: 750px;
+    }
+    .our-service {
+        margin-bottom: 40px;
+    }
+    .phone-email-skype span{
+        background: #00e06d;
+        border: 1px solid #00e06d;
+        color: #fff;
+    }
 }
 /********************************************************
         ## Max Width 767px
 ********************************************************/
 @media only screen and (max-width:767px) {
+    .request-a-quote div.wpcf7-mail-sent-ok{
+        margin-top: 0;
+        float: none;
+    }
     .primary-menu .xs-angle-down {
         margin: -10px 0 0 0;
         padding: 9px 15px;
@@ -67,47 +104,113 @@
     .header-social {
         margin-bottom: 10px;
     }
-    .header-middle .mini-cart {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        text-align: left;
-        z-index: 1;
-        width: auto;
-    }
-    .primary-menu ul li a {
-        padding: 15px;
-    }
     .navbar-default .navbar-toggle{
-
+        margin-right: 0;
+        border-color: #00e06d;
     }
     .navbar-default .navbar-toggle .icon-bar{
-
+        background-color: #00e06d;
     }
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-
+        background-color: #00e06d;
     }
     .navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar{
-
+        background-color: #fff;
     }
-    .woocommerce .product-fix .compare, .woocommerce .product-fix .yith-wcqv-button{
-        visibility: visible;
-        bottom: 0;
+    .padding-fix {
+        padding: 0 30px;
     }
-    .margin-top-xs-20{
-        margin-top: 20px;
+    .primary-menu .navbar-nav>li, .primary-menu .navbar-nav {
+        display: block;
+        text-align: left;
     }
-    .footer-bottom ,.footer-bottom ul{
-        text-align: center;
+    .we-are-an-agency{
+        padding: 60px 0 0;
     }
-
+    .item-fix {
+        margin-bottom: 40px;
+    }
+    .our-service{
+        margin-bottom: 50px;
+    }
+    .sticky.header {
+        position: relative;
+    }
+    .header-top:after,.request-account .request-button:before{
+        display: none;
+    }
+    .request-account{
+        position: absolute;
+        top: 0;
+        right: 60px;
+    }
+    .logo{
+        margin: 0;
+    }
+    .header {
+        padding: 15px 0;
+    }
+    .request-account .request-button:focus, .request-account .request-button{
+        background: none;
+        color: inherit;
+        padding-top: 15px;
+    }
+    .type-wrap {
+        padding: 0 15px;
+    }
+    .type-inner h1 {
+        line-height: inherit;
+        font-size: 30px;
+    }
+    .typed-cursor{
+        font-size: 60px;
+    }
+    .portfolio-details {
+        top: 5%;
+    }
+    .phone-email-skype span{
+        background: #00e06d;
+        border: 1px solid #00e06d;
+        color: #fff;
+    }
 }
 /********************************************************
         ## Max Width 480px
 ********************************************************/
 @media only screen and (max-width:480px) {
-    .woocommerce ul.products li.product, .woocommerce-page ul.products li.product, .woocommerce-page[class*=columns-] ul.products li.product, .woocommerce[class*=columns-] ul.products li.product{
-        width: 100%;
+    .contact-details-fix{
+        padding: 0;
+    }
+    .testimonial-details {
+        min-height: 515px;
+    }
+    .portfolio-details h1{
+        font-size: 18px;
+    }
+    .portfolio-details {
+        padding: 15px;
+        top: 0;
+    }
+    .brand-logo li {
+        width: 50%;
+    }
+    .info-details p {
+        font-size: 18px;
+    }
+    .request-account,.header-top:after{
+        display: none;
+    }
+    .portfolio-text a {
+        margin-top: 10px;
+        padding: 3px 15px;
+    }
+    .type-wrap {
+        position: relative;
+        top: 0;
+    }
+    .type-inner h1 {
+        line-height: inherit;
+        font-size: 30px;
     }
 }
 /********************************************************

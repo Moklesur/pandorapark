@@ -53,6 +53,12 @@ $(function(){
         ease: 'swing',
         target: $('body'),
         container: $(window)
-    })
+    });
+
+
+    $('#myModal').on('hidden.bs.modal', function (e) {
+        //$("#myModal").show();
+    });
+
 
 });

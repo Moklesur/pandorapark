@@ -15,7 +15,7 @@ Tags: fully customizable, custom color, custom fonts, visual page builder, mobil
 body{
 	font-weight: 400;
 }
-a,.btn,input,button,.woocommerce .product-fix .compare,.woocommerce .product-fix .yith-wcqv-button,.woocommerce ul.products li.product .thumbs,.services .carousel-indicators,.portfolio-list .portfolio-image::after,.testimonial .testimonial-arrow,.brand-logo li,.phone-email-skype span,.sticky .primary-menu ul li a ,.sticky .logo img{
+a,.btn,input,button,.woocommerce .product-fix .compare,.woocommerce .product-fix .yith-wcqv-button,.woocommerce ul.products li.product .thumbs,.services .carousel-indicators,.portfolio-list .portfolio-image::after,.testimonial .testimonial-arrow,.brand-logo li,.phone-email-skype span,.sticky .primary-menu ul li a ,.sticky .logo img,.request-a-quote button.close{
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
@@ -215,6 +215,12 @@ p,.woocommerce-Address address {
 	color: #fff;
 	position: relative;
 }
+.request-account .request-button:focus,.request-account .request-button{
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	z-index: 1;
+}
 .request-account .request-button:before {
 	content: "";
 	width: 0;
@@ -227,7 +233,6 @@ p,.woocommerce-Address address {
 	border-color: transparent #00e06d transparent transparent;
 	border-width: 64px 17px 0 0;
 }
-
 /********************************************************
     ## Menu, Slider
 ********************************************************/
@@ -283,18 +288,21 @@ p,.woocommerce-Address address {
 /********************************************************
     ## Home
 ********************************************************/
-.testimonial-arrow{
-	opacity: 0;
+.we-are-an-agency{
+	padding: 150px 90px 90px;
 }
-.testimonial:hover .testimonial-arrow{
-	opacity: 1;
+.our-service{
+	margin-bottom:180px;
+}
+.testimonial-details{
+	min-height: 195px;
 }
 .testimonial blockquote{
 	border-color: #00e06d;
 }
 .testimonial{
 	margin: 0 auto;
-	width: 650px;
+	max-width: 650px;
 }
 .testimonial-arrow a{
 	text-decoration: none;
@@ -343,7 +351,8 @@ p,.woocommerce-Address address {
 	display: inline-block;
 }
 .services .item h1{
-	font-size: 40px;
+	font-size: 30px;
+	font-weight: normal;
 }
 .services:hover .carousel-indicators{
 	visibility: visible;
@@ -376,7 +385,13 @@ p,.woocommerce-Address address {
 }
 .services-details p{
 	margin-bottom: 0;
-	font-size: 20px;
+}
+.widget-heading-white a{
+	text-transform: capitalize;
+}
+.widget-heading-white .widget-title{
+	color: #fff;
+	text-transform: capitalize;
 }
 .services .item h1 span {
 	background: #00e06d;
@@ -430,6 +445,11 @@ p,.woocommerce-Address address {
 div.wpcf7-mail-sent-ok {
 	border: 2px solid #00e06d;
 }
+.request-a-quote div.wpcf7-mail-sent-ok{
+	overflow: hidden;
+	float: right;
+	margin-top: -40px;
+}
 .get-in-touch .wpcf7-form-control:focus,.get-in-touch .wpcf7-form-control:hover{
 	border-color: #000;
 	background: rgba(0,0,0,0.5);
@@ -470,6 +490,9 @@ div.wpcf7-mail-sent-ok {
 /********************************************************
     ## Contact Us
 ********************************************************/
+.contact-details-fix{
+	padding: 90px;
+}
 .phone-email-skype{
 	text-align: center;
 }
@@ -482,7 +505,7 @@ div.wpcf7-mail-sent-ok {
 	left: -2px;
 	top: 5px;
 }
-.phone-email-skype:hover  span{
+.phone-email-skype:hover  span,.phone-icon.phone-email-skype span{
 	background: #00e06d;
 	border: 1px solid #00e06d;
 	color: #fff;
@@ -516,6 +539,10 @@ div.wpcf7-mail-sent-ok {
 	padding: 2px 25px;
 	height: inherit;
 	letter-spacing: 1px;
+}
+.quote-btn-fix .btn{
+	padding: 12px 25px;
+	font-size: 18px;
 }
 /********************************************************
     ## Blog
@@ -696,16 +723,16 @@ footer .info-details .fa{
 	z-index: 1;
 }
 .type-inner{
-	max-width: 750px;
+	max-width: 830px;
 	margin: 0 auto;
+	text-align: left;
 }
-.type-inner >h1{
+.type-inner h1{
 	line-height: 1.6;
-	font-size: 24px;
+	font-size: 55px;
 	font-weight: normal;
 }
 .fix-type{
-	font-size: 75px;
 	text-transform: capitalize;
 	line-height: 1.8;
 	background: rgba(255, 255, 255, .7);
@@ -730,4 +757,50 @@ footer .info-details .fa{
 	font-size: 75px;
 	font-weight: normal;
 	color: #00e06d;
+}
+.request-a-quote{
+	background: url("assets/images/quote.jpg") no-repeat;
+}
+.request-a-quote .modal-content{
+	overflow: hidden;
+	background: none;
+	border: 0;
+	box-shadow: none;
+}
+.request-a-quote .form-control{
+	background: transparent;
+	border-color: #00e06d;
+	min-height: 46px;
+	height: inherit;
+}
+.request-a-quote div.wpcf7-validation-errors{
+	overflow: hidden;
+	width: 100%;
+}
+.request-a-quote  .wpcf7-form-control-wrap{
+	position: relative;
+}
+.request-a-quote span.wpcf7-not-valid-tip{
+	position: absolute;
+	top: 12px;
+	right: 15px;
+}
+.request-a-quote button.close:hover{
+	border-color: #000;
+	background: #000;
+}
+.request-a-quote h1{
+	margin-top: 0;
+}
+.request-a-quote button.close{
+	position: absolute;
+	right: 60px;
+	top: 15px;
+	padding: 10px 15px;
+	border: 1px solid #00e06d;
+	color: #fff;
+	opacity: 1;
+	background: #00e06d;
+	text-shadow: none;
+	z-index: 10;
 }

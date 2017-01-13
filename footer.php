@@ -38,5 +38,19 @@
 </div>
 <?php wp_footer(); ?>
 
+
+<!-- Modal -->
+<div class="modal fade request-a-quote" id="request-a-quote" tabindex="-1" role="dialog" aria-labelledby="request-a-quote" data-backdrop="static">
+	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h1>Get a quote for your projects!</h1>
+				<?php echo do_shortcode('[contact-form-7 id="175" title="Request A Quote"]'); ?>
+			</div>
+		</div>
+	</div>
+</div>
+
 </body>
 </html>

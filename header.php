@@ -45,7 +45,7 @@
 							</button>
 						</div>
 						<ul class="list-inline request-account pull-right">
-							<li><a href="/contact-us/" class="request-button display-inline-b">request a quote</a></li>
+							<li><a href="#" class="request-button display-inline-b" data-toggle="modal" data-target="#request-a-quote">request a quote</a></li>
 						</ul>
 						<div id="navbar-collapse" class="navbar-collapse collapse text-center">
 							<?php
