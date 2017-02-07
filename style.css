@@ -150,7 +150,7 @@ p,.woocommerce-Address address {
 .pandora-heading .widget-title span{
 	position: relative;
 }
-.color-white *{
+.white,.color-white *{
 	color: #fff;
 }
 .pandora-heading .widget-title , .widget-title{
@@ -288,6 +288,15 @@ p,.woocommerce-Address address {
 /********************************************************
     ## Home
 ********************************************************/
+.main-banner::after {
+	content: '';
+	background: rgba(0, 0, 0, .7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 .we-are-an-agency{
 	padding: 150px 90px 90px;
 }
@@ -689,7 +698,7 @@ footer .info-details .fa{
 .animsition-loading {
 	border-top: 4px solid #00e06d;
 	border-right: 4px solid #00e06d;
-	border-bottom: 4px solid #333;
+	border-bottom: 4px solid #00e06d;
 	border-left: 2px solid #00e06d;
 	width: 45px;
 	height: 45px;
@@ -718,7 +727,7 @@ footer .info-details .fa{
 }
 .type-wrap{
 	position: absolute;
-	top: 17%;
+	top: 30%;
 	width: 100%;
 	z-index: 1;
 }

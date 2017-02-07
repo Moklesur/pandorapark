@@ -8,7 +8,7 @@
     <div class="type-wrap">
         <div class="type-inner">
             <div class="type">
-                <h1>We Are Here To :<br/><span class="type-heading"></span></h1>
+                <h1><span class="white">We Are Here To :</span><br/><span class="type-heading"></span></h1>
             </div>
         </div>
     </div>
