@@ -128,7 +128,7 @@ p,.woocommerce-Address address {
 .woocommerce ul.products li.product .price del,.margin-right-10{
 	margin-right: 10px;
 }
-.display-inline-b,.header-top .header-social a,.footer-social a,.footer-middle li a,.woocommerce ul.products li.product .price del,.owl-nav>div,.wpcf7-form-control-wrap{
+.display-inline-b,.header-top .header-social a,.footer-social a,.footer-middle li a,.woocommerce ul.products li.product .price del,.owl-nav>div{
 	display: inline-block;
 }
 .overflow,.woocommerce ul.products li.product .price{
@@ -170,7 +170,6 @@ p,.woocommerce-Address address {
 	-moz-transition: top 500ms ease-in-out;
 	-o-transition: top 500ms ease-in-out;
 	transition: top 500ms ease-in-out;
-	top: -50%;
 }
 .navbar-default{
 	border-radius: 0;
@@ -178,6 +177,9 @@ p,.woocommerce-Address address {
 	height: inherit;
 	background: transparent;
 	border: 0;
+}
+.sticky{
+	top: -50%;
 }
 .sticky.header{
 	background: rgba(255, 255, 255, .85);
@@ -288,6 +290,16 @@ p,.woocommerce-Address address {
 /********************************************************
     ## Home
 ********************************************************/
+.main-banner {
+	overflow:hidden;
+}
+.main-banner img{
+	transform: scale(2);
+	-moz-transform: scale(2);
+	-webkit-transform: scale(2);
+	-ms-transform: scale(2);
+	-o-transform: scale(2);
+}
 .main-banner::after {
 	content: '';
 	background: rgba(0, 0, 0, .7);
@@ -343,7 +355,7 @@ p,.woocommerce-Address address {
 	color: #fff;
 }
 .portfolio-list:hover .portfolio-image::after{
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.6);
 }
 .portfolio-image::after{
 	content: '';
@@ -394,6 +406,9 @@ p,.woocommerce-Address address {
 }
 .services-details p{
 	margin-bottom: 0;
+}
+.services-container {
+	text-align: justify;
 }
 .widget-heading-white a{
 	text-transform: capitalize;
@@ -698,7 +713,7 @@ footer .info-details .fa{
 .animsition-loading {
 	border-top: 4px solid #00e06d;
 	border-right: 4px solid #00e06d;
-	border-bottom: 4px solid #00e06d;
+	border-bottom: 2px solid #00e06d;
 	border-left: 2px solid #00e06d;
 	width: 45px;
 	height: 45px;
@@ -787,7 +802,9 @@ footer .info-details .fa{
 	width: 100%;
 }
 .request-a-quote  .wpcf7-form-control-wrap{
-	position: relative;
+	overflow: hidden;
+	width: 100%;
+	display: block;
 }
 .request-a-quote span.wpcf7-not-valid-tip{
 	position: absolute;
