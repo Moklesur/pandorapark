@@ -242,3 +242,49 @@ function themetim_active_plugins() {
 	tgmpa( $plugins );
 
 }
+
+
+/**
+ * ThemeTim WP Themes
+ *
+ */
+add_action( 'init', 'pandorapark_wp_themes_items' );
+function pandorapark_wp_themes_items() {
+	$testimonial_labels = array(
+		'name'               => _x( 'WP Themes', 'post type general name', 'themetim' ),
+		'singular_name'      => _x( 'themes', 'post type singular name', 'themetim' ),
+		'menu_name'          => _x( 'WP Themes', 'admin menu', 'themetim' ),
+		'name_admin_bar'     => _x( 'WP Themes', 'add new on admin bar', 'themetim' ),
+		'add_new'            => _x( 'Add New', 'WP Themes', 'themetim' ),
+		'add_new_item'       => __( 'Add New WP Themes', 'themetim' ),
+		'new_item'           => __( 'New WP Themes', 'themetim' ),
+		'edit_item'          => __( 'Edit WP Themes', 'themetim' ),
+		'view_item'          => __( 'View WP Themes', 'themetim' ),
+		'all_items'          => __( 'All WP Themes', 'themetim' ),
+		'search_items'       => __( 'Search WP Themes', 'themetim' ),
+		'parent_item_colon'  => __( 'Parent WP Themes:', 'themetim' ),
+		'not_found'          => __( 'No WP Themes found.', 'themetim' ),
+		'not_found_in_trash' => __( 'No WP Themes found in Trash.', 'themetim' )
+	);
+
+	$testimonial_args = array(
+		'labels'             => $testimonial_labels,
+		'description'        => __( 'Description.', 'themetim' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true, 
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'themes' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'author', 'thumbnail'),
+		'taxonomies'          => array( 'category' ),
+		'page'          => array( 'setting' ),
+
+	);
+
+	register_post_type( 'wp_themes', $testimonial_args );
+}

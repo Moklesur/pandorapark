@@ -5,13 +5,13 @@
 	<h4 class="widget-sub-title"><?php echo esc_html( $instance['sub_title'] ); ?></h4>
 <?php endif; ?>
 
-<?php foreach( $instance['menus'] as $i => $menu ) : ?>
+<?php foreach( $instance['menus'] as $i => $portfolio ) : ?>
 	<div class="themetim-portfolio-list overflow portfolio-list col-md-<?php echo esc_attr( $instance['per_row'] ); ?> col-sm-12 col-xs-12 padding-null">
 		<div class="position-relative">
 			<div class="portfolio-image">
 				<?php
-				$profile_picture = $menu['profile_picture'];
-				$profile_picture_fallback = $menu['profile_picture_fallback'];
+				$profile_picture = $portfolio['profile_picture'];
+				$profile_picture_fallback = $portfolio['profile_picture_fallback'];
 				$image_details = siteorigin_widgets_get_attachment_image_src(
 					$profile_picture,
 					'',
@@ -23,14 +23,19 @@
 				?>
 			</div>
 			<div class="portfolio-details">
-				<?php if ( ! empty( $menu['menu_title'] ) ) : ?>
-					<h1 class="text-capitalize margin-bottom-0"><span><?php echo esc_html( $menu['menu_title'] ); ?></span></h1>
+				<?php if ( ! empty( $portfolio['menu_title'] ) ) : ?>
+					<h1 class="text-capitalize margin-bottom-0"><span><?php echo esc_html( $portfolio['menu_title'] ); ?></span></h1>
 				<?php endif; ?>
-				<?php if ( ! empty( $menu['menu_price'] ) ) : ?>
-					<p><span><?php echo esc_html( $menu['menu_price'] ); ?></span></p>
+				<?php if ( ! empty( $portfolio['menu_price'] ) ) : ?>
+					<p><span><?php echo esc_html( $portfolio['menu_price'] ); ?></span></p>
 				<?php endif; ?>
-				<?php if ( ! empty( $menu['texteditor'] ) ) : ?>
-					<div class="portfolio-text"><?php echo  $menu['texteditor'] ; ?></div>
+				<?php if ( ! empty( $portfolio['texteditor'] ) ) : ?>
+					<div class="portfolio-text"><?php echo  $portfolio['texteditor'] ; ?></div>
+				<?php endif; ?>
+				<?php if ( ! empty( $portfolio['demo_url'] ) ) : ?>
+					<div  class="portfolio-text">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>template/?demo=<?php echo $portfolio['demo_url']; ?>"  target="_blank">View Demo</a>
+					</div>
 				<?php endif; ?>
 			</div>
 		</div>

@@ -20,4 +20,5 @@ if ( class_exists( 'SiteOrigin_Widget' ) ) {
     require get_template_directory() . '/inc/widget/services/services.php';
     require get_template_directory() . '/inc/widget/portfolio/portfolio.php';
     require get_template_directory() . '/inc/widget/testimonial/testimonial.php';
+    require get_template_directory() . '/inc/widget/wp-theme-title/wp-theme-title.php';
 }

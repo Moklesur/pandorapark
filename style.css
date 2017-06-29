@@ -288,6 +288,24 @@ p,.woocommerce-Address address {
 	z-index: 2;
 }
 /********************************************************
+    ## WP Theme
+********************************************************/
+.wp-theme-title .widget-title{
+	margin-bottom: 10px;
+	font-size: 45px;
+}
+.wp-theme-title .widget-sub-title{
+	margin-bottom: 30px;
+}
+.wp-theme-title .btn{
+	margin-top: 15px;
+	padding: 15px 15px;
+	font-size: 18px;
+}
+.theme-license{
+	margin-top: 20px;
+}
+/********************************************************
     ## Home
 ********************************************************/
 .main-banner {

@@ -57,6 +57,11 @@ class Themetim_Portfolio_Widget extends SiteOrigin_Widget {
 								'quicktags_settings' => array( $this, 'filter_quicktags_settings' ),
 							),
 						),
+						'demo_url' => array(
+							'type' => 'text',
+							'label' => __('Demo URL', 'bloogs'),
+							'default' => ''
+						),
 						'profile_picture' => array(
 							'type'     => 'media',
 							'library'  => 'image',
